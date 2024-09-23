@@ -33,11 +33,25 @@ h3 {
 }
 
 /* Stylizacja dla głównych sekcji projektów */
-.project-category {
-	background-color: #cccccc;
+.project-category1{
+	background-color:     #f7dc6f    ;
     border: 2px solid #ccc;
     border-radius: 10px;
-    margin: 70px 10px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+.project-category2{
+	background-color:     #e59866    ;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+.project-category3{
+	background-color:    #f1948a   ;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 10px;
     padding: 20px;
 }
 
