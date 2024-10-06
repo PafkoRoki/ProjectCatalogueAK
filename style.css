@@ -33,22 +33,8 @@ h3 {
 }
 
 /* Stylizacja dla głównych sekcji projektów */
-.project-category1{
-	background-color: #6AD1E3;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin: 20px 10px;
-    padding: 20px;
-}
-.project-category2{
-	background-color: #A4D65E;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin: 20px 10px;
-    padding: 20px;
-}
-.project-category3{
-	background-color: #FFB25B;
+.project-category{
+	background-color: #d0deee;
     border: 2px solid #ccc;
     border-radius: 10px;
     margin: 20px 10px;
@@ -65,14 +51,14 @@ h3 {
 }
 
 .projects-container {
-    display: none; /* Domyślnie ukryte */
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0px;
 }
 
 .projects-container.visible {
-    display: flex; /* Pokaż, gdy klasa visible jest dodana */
+    display: none; /* Pokaż, gdy klasa visible jest dodana */
 }
 
 .project-tile {
