@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #4f81bd;
+    background-color: #35637c;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -34,7 +34,7 @@ h3 {
 
 /* Stylizacja dla głównych sekcji projektów */
 .project-category{
-	background-color: #d0deee;
+	background-color: #eee;
     border: 2px solid #ccc;
     border-radius: 10px;
     margin: 20px 10px;
@@ -134,7 +134,7 @@ h3 {
     transform: translateY(-50%);
     padding: 10px 120px;
     background-color: #fff;
-    color: #4f81bd;
+    color: #35637c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -149,3 +149,82 @@ h3 {
 
 
 ----------------------------------------------------------------------------
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Modal (ukryty domyślnie) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        /* Treść modala */
+        .modal-content {
+            background-color: #fff;
+            margin: 2% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 6px;
+        }
+		
+		.modal img {
+			width: 1080px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+        /* Przycisk zamykania */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 56px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+		
+		.prev, .next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(255, 255, 255, 0.7);
+			border: none;
+			font-size: 48px;
+			cursor: pointer;
+			padding: 10px;
+			border-radius: 50%;
+		}
+
+		.prev {
+			left: 10px;
+		}
+
+		.next {
+			right: 10px;
+		}
+
+		.modal-content {
+			position: relative; /* Dodać dla przycisków nawigacji */
+			overflow: hidden; /* Ukryć nadmiar treści */
+		}
