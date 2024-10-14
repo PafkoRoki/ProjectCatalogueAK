@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'PismoTech';
+  src: url('FL Pismo Techniczne.ttf') format('truetype');
+}
+
+body {
+    font-family: 'PismoTech', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #35637c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tile {
+    background-color: #dddddd;
+    color: #35637c;
+    margin: 10px;
+    flex: 0 0 calc(33.333% - 20px); /* 3 kolumny */
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden; /* Ukrycie nadmiaru */
+    position: relative; /* Pozycjonowanie dla elementów wewnętrznych */
+}
+
+.tile iframe {
+    width: 100%; /* Dostosowanie szerokości do kafelka */
+    height: 100%; /* Ustalona wysokość (możesz dostosować w razie potrzeby) */
+}
+
+.tile img {
+    width: 100%; /* Dostosowanie szerokości do kafelka */
+    height: auto; /* Utrzymanie proporcji obrazka */
+}
+
+.project-status {
+    position: absolute; /* Pozycjonowanie absolutne */
+    top: 15px; /* Odległość od góry */
+    left: 15px; /* Odległość od prawej */
+}
+
+.download-btn {
+    padding: 8px 8px; /* Wewnętrzne odstępy */
+    background-color: #1caad9; /* Tło przycisku */
+    color: white; /* Kolor tekstu */
+    text-decoration: none; /* Brak podkreślenia */
+    border-radius: 25px; /* Zaokrąglenie rogów */
+    transition: background-color 0.3s, color 0.3s; /* Przejrzystość na hover */
+}
+
+.download-btn:hover {
+    background-color: #1c88bb; /* Zmiana tła na hover */
+    color: white; /* Zmiana koloru tekstu na hover */
+}
+
+.modal {
+    display: none; /* Ukrycie modalu */
+    position: fixed; /* Pozycjonowanie stałe */
+    z-index: 1000; /* Zawsze na wierzchu */
+    left: 0;
+    top: 0;
+    width: 100%; /* Szerokość 100% */
+    height: 100%; /* Wysokość 100% */
+    overflow: auto; /* Przewijanie, jeśli za dużo treści */
+    background-color: rgb(0,0,0); /* Czarne tło */
+    background-color: rgba(0,0,0,0.4); /* Przezroczystość */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Wyśrodkowanie */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Szerokość modalu */
+}
+
+.close {
+    color: #aaa; /* Kolor przycisku zamykania */
+    float: right; /* Przesunięcie w prawo */
+    font-size: 28px; /* Rozmiar czcionki */
+    font-weight: bold; /* Pogrubienie */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Zmiana koloru przy najechaniu */
+    text-decoration: none; /* Brak podkreślenia */
+    cursor: pointer; /* Kursor wskazujący interaktywność */
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dwie kolumny o równych szerokościach */
+    gap: 10px 20px; /* Odstępy między wierszami i kolumnami */
+    align-items: center; /* Wyrównanie w pionie */
+}
+
+.label {
+    text-align: left; /* Tekst wyrównany do lewej */
+	margin-left: 20%;
+    color: #333;
+}
+
+.value {
+    text-align: right; /* Wartości wyrównane do prawej */
+	margin-right: 20%;
+    color: #333;
+}
+
+.value strong {
+    font-weight: bold; /* Pogrubienie wartości */
+    color: #000; /* Można dodać inne wyróżnienie kolorem */
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .tile {
+        flex: 0 0 calc(100% - 20px); /* 1 kolumna na małych ekranach */
+    }
+}
