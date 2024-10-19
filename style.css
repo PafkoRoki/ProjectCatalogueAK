@@ -55,11 +55,10 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0px;
-	display: none
 }
 
 .projects-container.visible {
-    display: flex;/* Pokaż, gdy klasa visible jest dodana */
+    display: none;/* Pokaż, gdy klasa visible jest dodana */
 }
 
 .project-tile {
