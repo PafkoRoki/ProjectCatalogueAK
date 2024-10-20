@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PismoTech';
-  src: url('FL Pismo Techniczne.ttf') format('truetype');
+  src: url('fonts/FL Pismo Techniczne.ttf') format('truetype');
 }
 
 body {
@@ -16,11 +16,20 @@ header {
     text-align: center;
     padding: 5px 0;
     position: relative;
+	line-height: 80%;
 }
 
 header h1 {
 	font-style: italic;
 	font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #fff;  /* Kolor linii */
+    width: 33.333%;               /* Szerokość linii */
+    margin: 20px auto;            /* Odstępy wokół linii */
 }
 
 .footer {
