@@ -152,3 +152,24 @@ bottom: 0;
         flex: 0 0 calc(100% - 20px); /* 1 kolumna na małych ekranach */
     }
 }
+
+a:link
+{
+   color: #fff;
+   text-decoration: none;
+}
+
+a:visited
+{
+   color: white;
+}
+
+a:hover
+{
+   color: #1caad9;
+}
+
+a:active
+{
+   color: #1caad9;
+}

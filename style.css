@@ -32,6 +32,26 @@ h3 {
     cursor: pointer; /* Kursor zmienia się na wskaźnik */
 }
 
+a:link
+{
+   color: #fff;
+   text-decoration: none;
+}
+
+a:visited
+{
+   color: white;
+}
+
+a:hover
+{
+   color: #1caad9;
+}
+
+a:active
+{
+   color: #1caad9;
+}
 ----------------------------------------------------------------------------
 
 .contact-icon {
@@ -201,5 +221,3 @@ padding: 10px;
 bottom: 0;
 }
 ----------------------------------------------------------------------------
-
-
